@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+
+</head>
+<style>
+    body {
+        background: url('https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697328000&semt=sph');
+        margin: 0px;
+        padding: 0px;
+        background-repeat: no-repeat;
+        background-size: 1400px 800px;
+    }
+
+     .left {
+        position: absolute;
+        /* left: 20px; */
+        top: 10px;
+        left: 25px;
+        display: inline block;
+        /* border: 2px solid red; */
+
+    } 
+
+    .left img {
+        width: 90px;
+    }
+
+    .left div {
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .mid {
+        display: block;
+        /* border: 2px solid greenyellow; */
+        margin: 20px auto;
+        width: 45%;
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid rgb(124, 124, 209); */
+        position: absolute;
+        /*You can also use float:left*/
+        right: 34px;
+        /*absolute: It can set according to its parent(header)*/
+        top: 15px;
+        margin: 20px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+
+    }
+
+    .navbar li a {
+        color: rgb(214, 12, 89);
+        text-decoration: none;
+        padding: 35px 35px;
+        /*margin: you can also write margin instead of padding(margin:25px)*/
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+    }
+
+    .btn {
+        padding: 4px 14px;
+        margin: 0px 9px;
+        border: 2px solid rgb(209, 165, 165);
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer
+    }
+
+    .btn:hover {
+        background-color: rgb(193, 228, 203);
+    }
+
+    .container {
+        color: white;
+        border: 2px dotted rgb(214, 121, 121);
+        margin: 85px 74px;
+        padding: 30px 34px;
+        border-radius: 10px;
+        width: 27%;
+    }
+
+    .form-group {
+        text-align: center;
+        display: block;
+        padding: 20px;
+        width: 330px;
+        /* border: 2px solid black; */
+        margin: 23px auto;
+        font-size: 21px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        width: 100px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fitness-logo%2C-gym-logo%2C-fitness-center-logo-%28-design-template-386146ae4164059d8fb5bbf00a6c28bc_screen.jpg?ts=1669139043"
+                alt="">
+            <div>Leo Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call US</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Gym </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <div>
+                    Name: <input type="text" name="myname">
+                </div>
+                <br>
+                <div>
+                    Email: <input type="email" name="myname">
+                </div>
+                <br>
+                <div>
+                    Contact :<input type="number" name="mynumber">
+                </div>
+                <br>
+                <div>
+                    Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender"> other
+                    <input type="radio" name="mygender">
+                </div>
+                <br>
+                <div>
+                    Age: <input type="number" name="myage">
+                </div>
+                <br>
+                <div>
+                    <!-- <input type="submit" value="Submit Now"> -->
+                    <button class="btn">Submit</button>
+                    <!-- /* IT will show same type of button which above show  -->
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
